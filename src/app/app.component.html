@@ -1,0 +1,45 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to Oauth Client!
+  </h1>
+
+  <span> TOP SECRET : username : obama@gmail.com , password : secret123</span>
+  <br>
+  <br>
+
+  <form #connectForm="ngForm" (ngSubmit)="connect(connectForm)">
+    <label>UserName</label>
+    <br>
+    <input type="text" name="username" ngModel>
+    <br>
+    <label>Password</label>
+    <br>
+    <input type="password" name="password" ngModel>
+    <br>
+    <button type="submit">Login</button>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <span >
+      Token : {{accessToken}}
+    </span>
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <div>
+    <span >
+      Tickets : {{tickets | json}}
+    </span>
+  </div>
+
+</div>
+
+
